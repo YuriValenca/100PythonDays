@@ -12,7 +12,7 @@ Se o robô fosse percorrer um caminho serpenteado, além das invocações de tur
 
 caminho do robô(ele começa virado para a direita):
    __    __
-__|  |__|  |__ e assim por diante                  
+__|PD|__|PD|__ e assim por diante           PD = parede       
 
 def turn_right():
     turn_left()
@@ -35,3 +35,54 @@ for step in range(6):
     serpentina()
 
 A função seria chamada 6 vezes dentro do for, fazendo o robô chegar ao fim das 6 serpentinas
+
+
+
+Supondo que a quantidade de serpentinas é aleatória, assim como seu posicionamento:
+   __    __        __   
+__|PD|__|PD|______|PD|________ fim
+
+É possível fazer o robô chegar ao fim utilizando loops de while da seguinte maneira: Até o robô chegar no fim (condição de parada) se ele identificar que uma parede está na sua frente (if/else), ele fará o movimento de serpentina. O pseudo código ficaria da seguinte maneira:
+
+no_fim() = função própria do "jogo", em que o sistema identifica se a posição do robô = posição final do objetivo
+verifica_parede() = função própria do "jogo", em que o sistema identifica se o robô está diante de uma parede
+
+
+while robo not no_fim():
+    if (verifica_parede() == True):
+        serpentina()
+    else:
+        move()
+
+Dessa maneira, o robô se moverá até que ele encontre uma parede, realizando o movimento de serpentina e ficando "de frente" (no sentido até o objetivo) para a bandeira
+
+
+
+Dificultando mais um pouco o desafio, poderíamos ter paredes de alturas variáveis e em posições aleatórias:
+   __
+  |PD|             __
+  |PD|   __       |PD|
+  |PD|  |PD|      |PD|      __
+__|PD|__|PD|______|PD|_____|PD|___ fim
+
+Nesse caso, seria necessário alterar a função de serpentina, para que ele não apenas andasse em movimento de serpentina mas verificasse a presença de uma parede (à sua direita). O pseudo código seria dado por:
+
+wall_on_right() = função própria do "jogo", em que o sistema identifica se há a presença de uma parede à direita do robô. Função similar a verifica_parede(), porém, verifica em outro sentido (checa a direita do robô)
+front_is_clear() = função própria do "jogo", em que o sistema identifica se a frente do robô está liberada, no caso abaixo, servirá para identificar o "chão", e fazer com que o robô vire à esquerda (no sentido do fim) para continuar seu percurso
+
+serpentina():
+    turn_left()
+    while wall_on_right():
+        move()      # Enquanto há uma parede na direita, vá em frente (pra cima)
+    turn_right()
+    move()
+    turn_right()
+    while front_is_clear():
+        move()      # Enquanto não estiver "no chão" vá em frente (para baixo)
+    turn_left()
+
+while robo not no_fim():
+    if (verifica_parede() == True):
+        serpentina()
+    else: 
+        move()
