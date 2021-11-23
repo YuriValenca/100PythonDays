@@ -1,0 +1,37 @@
+Essa parte do curso (aulas e exercícios) foi feita no site www.reeborg.ca, onde um "jogo" de um robô é utilizado para auxiliar no ensino de funções em python. Isso porque o robô tem apenas duas funções (principais):  move() que move ele em um espaço, na direção em que ele está olhando e turn_left() para virar o robô para a esquerda. A implementação de funções em python é mostrada de forma que, caso o robô precise virar para a direita e andar, ele precisaria de 4 comandos (3 turn_left() e um move()), se isso fosse necessário várias vezes, transformar isso em uma função se torna muito mais prático, pois basta invocar a função no código e o bloco dentro dela será executado:
+
+def turn_right_move():
+    turn_left()
+    turn_left()
+    turn_left()
+    move()
+
+Vários outros caminhos podem ser criados quando se utiliza funções, e a cada vez que esse novo caminho é invocado, mais a criação da função, além de tornar a escrita menos cansativa, torna o código mais arrumado e legível.
+
+Se o robô fosse percorrer um caminho serpenteado, além das invocações de turn_right(), seria necessário uma função que envolvesse a função turn_right() e que fizesse o robô cumprir uma serpentina do caminho, sendo assim, várias chamadas dessa função enxugariam o código e fariam com que o movimento do robô (que é mais complexo agora), pudesse ser executado:
+
+caminho do robô(ele começa virado para a direita):
+   __    __
+__|  |__|  |__ e assim por diante                  
+
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+
+def serpentina():
+    move()
+    turn_left()
+    move()
+    turn_right()
+    move()
+    turn_right()
+    move()
+    turn_left()
+
+Se fossem 6 serpentinas, o código poderia ser:
+
+for step in range(6):
+    serpentina()
+
+A função seria chamada 6 vezes dentro do for, fazendo o robô chegar ao fim das 6 serpentinas
