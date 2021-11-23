@@ -6,4 +6,4 @@ Dentro do código, é possível encontrar comentários úteis para aprender um p
 
 O curso é dividido de forma que cada dia seja abordado um conceito importante de Python, com alguns exercícios (também comentados) e um "projeto final", que reúne conceitos adquiridos, principalmente, no dia relativo ao projeto.
 
-Vale ressaltar que os nomes dos códigos e pastas são totalmente descritivos, não seguem padrões de boas práticas de programação (necessários no import, por exemplo).
+Vale ressaltar que os nomes dos códigos e pastas são totalmente descritivos! Não seguem padrões de boas práticas de programação (necessários ao comando de import, por exemplo).
