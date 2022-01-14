@@ -1,1 +1,1 @@
-print("hi!")    #Print põe na tela uma mensagem delimitada pelas aspas duplas, que denotam onde o texto a ser exposto começa e onde ele termina
+print("hi!")    #Print põe na tela uma mensagem delimitada pelas aspas duplas, que denotam onde o texto a ser exposto começa e onde ele termina.
