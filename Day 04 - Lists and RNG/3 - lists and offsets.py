@@ -1,4 +1,4 @@
-# Lista é uma das muitas estruturas de dados presentes na computação. Estrutura de dados (ou data struct) é um jeito organizado é agil de armazenar informações no código. Até agora, apenas armazenou-se dados nas variáveis, porém, cada variável só tem capacidade de armazenar um valor, tornando inviável uma escalabilidade de muitos dados consecutivos. Nisso, as listas auxiliam bastante
+# Lista é uma das muitas estruturas de dados presentes na computação. Estrutura de dados (ou data struct) é um jeito organizado é agil de armazenar informações no código. Até agora, apenas armazenou-se dados nas variáveis, porém, cada variável só tem capacidade de armazenar um valor, tornando inviável uma escalabilidade de muitos dados consecutivos. Nisso, as listas auxiliam bastante.
 
 # Além da quantidade, dados presentes em data structs muito geralmente tem uma relação, ou uma ordem. O padrão de uma lista é: [item1, item2, ...]
 
