@@ -4,4 +4,4 @@ frutas = ["maçã", "banana", "pêra"]
 
 for fruta in frutas:  # Aqui, a variável fruta não existe, mas é criada para poder ser iterada no bloco de comando relativo ao for, caso contrário, a lista inteira seria iterada, e não cada item individualmente
     print(fruta)
-    print("Torta de " + fruta)  # Esse comando será executado antes da próxima fruta, pois o bloco que é executado diversas vezes, e não linha por linha
+    print("Torta de " + fruta)  # Esse comando será executado antes da próxima fruta, pois o bloco que é executado diversas vezes, e não linha por linha.
