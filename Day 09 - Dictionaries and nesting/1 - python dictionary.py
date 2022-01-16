@@ -1,4 +1,4 @@
-# Dicionários em python são similares aos da vida real, um termo, uma chave aliada a um valor, ou definição
+# Dicionários em python são similares aos da vida real, um termo, uma chave aliada a um valor, ou definição.
 
 dicionarioDeProgramacao = {
     "Bug" : "Um erro que ocorre num programa que impede que ele execute corretamente e/ou até o fim",
