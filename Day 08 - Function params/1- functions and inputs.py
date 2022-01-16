@@ -19,7 +19,7 @@ saudacao()
 # def minhaFuncao(essaCoisa):
 #     Faça isso com essaCoisa
 #     Depois isso com essaCoisa
-#     Por fim isso          # Não necessariamente todos os comandos da função precisam envolver o argumento passado
+#     Por fim isso          # Não necessariamente todos os comandos da função precisam envolver o argumento passado.
 
 def saudacaoPorNome(name):
     print(f"Opa, {name}. Tudo bem?")
