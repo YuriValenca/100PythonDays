@@ -30,4 +30,4 @@ def formatarNome2(primeiroNome, sobrenome):
 stringFormatada = formatarNome2("YURI", "VaLenÇA")
 print (stringFormatada)
 
-# À primeira vista, é possível ver que funções com outputs provêem muita flexibilidade ao código, visto que uma chamada de função possa querer modificar o output (mas ainda necessitar do que o bloco de código da função faz), enquanto outra chamada pode necessitar da saída da função "crua"
+# À primeira vista, é possível ver que funções com outputs provêem muita flexibilidade ao código, visto que uma chamada de função possa querer modificar o output (mas ainda necessitar do que o bloco de código da função faz), enquanto outra chamada pode necessitar da saída da função "crua".
