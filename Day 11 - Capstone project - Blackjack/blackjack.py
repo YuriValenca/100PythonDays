@@ -1,10 +1,10 @@
 # Para simplificação do projeto:
-# O deck tem tamanho infinito
-# Não tem Joker
-# Valete, rainha e rei valem 10
-# Ás vale 1 ou 11
-# As cartas possuem a mesma probabilidade de serem sorteadas
-# As cartas não são "removidas" do deck quando "puxadas"
+# O deck tem tamanho infinito;
+# Não tem Joker;
+# Valete, rainha e rei valem 10;
+# Ás vale 1 ou 11;
+# As cartas possuem a mesma probabilidade de serem sorteadas;
+# As cartas não são "removidas" do deck quando "puxadas".
 
 import random
 
