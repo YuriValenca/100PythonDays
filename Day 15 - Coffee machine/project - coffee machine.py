@@ -1,8 +1,8 @@
-# Primeiro pergunta qual café o usuário quer (podendo aceitar um report como entrada)
-# Digitar off acaba o programa
-# Checar se os recursos são suficientes pra fazer o café
-# Processar moedas e troco, verificando se a quantia total paga o café
-# Fazer o café e consumir os recursos
+# Primeiro pergunta qual café o usuário quer (podendo aceitar um report como entrada);
+# Digitar off acaba o programa;
+# Checar se os recursos são suficientes pra fazer o café;
+# Processar moedas e troco, verificando se a quantia total paga o café;
+# Fazer o café e consumir os recursos.
 
 MENU = {
     "espresso": {
