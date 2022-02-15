@@ -13,4 +13,7 @@ for question in question_data:
 
 quiz = QuizBrain(bancoDeQuestoes)
 
-quiz.proximaPerg()
+while quiz.aindaTemPerguntas():
+    quiz.proximaPerg()
+
+print(f"Obrigado por jogar, seu placar final foi: {quiz.score}")
